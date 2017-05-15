@@ -1,0 +1,17 @@
+{
+  "name"       : "sevenphp/markitdownwordpress",
+  "description": "wp-rocket WordPress cache plugin",
+  "keywords"   : ["markdown", "markup", "wordpress", "wp"],
+  "type"       : "wordpress-plugin",
+  "license"    : "GPL-2.0+",
+  "authors"    : [
+    {
+      "name"    : "Wassseem Khayrattee",
+      "email"   : "composer@7php.com",
+      "homepage": "http://7php.com"
+    }
+  ],
+  "require"    : {
+    "composer/installers": "~1.0"
+  }
+}

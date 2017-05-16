@@ -9,6 +9,8 @@
  * Domain Path: /languages/
  * License: GPL2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * REF: https://en.support.wordpress.com/markdown/
  */
 
 
@@ -23,20 +25,16 @@ if (! class_exists('Jetpack')) {
         include $lib_files_list['gfm'];
     }
 
-    require_once plugin_dir_path(__FILE__) . 'markdown/class.jetpack-options.php';
-    require_once plugin_dir_path(__FILE__) . 'markdown/easy-markdown.php';
+    require_once plugin_dir_path(__FILE__) . 'MarkItDownOptions.php';
+    if (! class_exists('WPCom_Markdown')) {
+        include plugin_dir_path(__FILE__) . 'markdown/easy-markdown.php';
+    }
 
     /*
      * Disable the wordpress visual editor, in Markdown writing we don't need it
      */
     add_filter('user_can_richedit', create_function('', 'return false;'), 50);
 
-    /*
-     * Though we are using this function, leaving it here to prevent any changes from happening
-     * inside the core file easy-mardown.php and hence ease updates process when we have to
-     */
-    function jetpack_require_lib($slug) { }
-
 } else {
-    trigger_error("It seems you are already running the Jetpack plugin. If YES, you don't need this plugin as Jetpack already has this module bundled.", E_USER_ERROR);
+    trigger_error("It seems you are also running the Jetpack plugin. If YES, you don't need the plugin [MarkItDownWordpress] as Jetpack already has this module bundled.", E_USER_WARNING);
 }

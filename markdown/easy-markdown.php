@@ -307,19 +307,25 @@ class WPCom_Markdown {
 	}
 
 	/**
+     * NOTE: This function has been modified by SevenPHP to remove dependency to class.jetpack-options.php
+     *
 	 * Is Mardown conversion for posts enabled?
 	 * @return boolean
 	 */
 	public function is_posting_enabled() {
-		return (bool) Jetpack_Options::get_option_and_ensure_autoload( self::POST_OPTION, '' );
+		//return (bool) Jetpack_Options::get_option_and_ensure_autoload( self::POST_OPTION, '' );
+		return (bool) MarkItDownOptions::get_option_and_ensure_autoload( self::POST_OPTION, '' );
 	}
 
 	/**
+     * NOTE: This function has been modified by SevenPHP to remove dependency to class.jetpack-options.php
+     *
 	 * Is Markdown conversion for comments enabled?
 	 * @return boolean
 	 */
 	public function is_commenting_enabled() {
-		return (bool) Jetpack_Options::get_option_and_ensure_autoload( self::COMMENT_OPTION, '' );
+		//return (bool) Jetpack_Options::get_option_and_ensure_autoload( self::COMMENT_OPTION, '' );
+		return (bool) MarkItDownOptions::get_option_and_ensure_autoload( self::COMMENT_OPTION, '' );
 	}
 
 	/**
@@ -342,6 +348,8 @@ class WPCom_Markdown {
 	}
 
 	/**
+     * NOTE: Modified by SevenPHP, removed jetpack_require_lib
+     *
 	 * Get our Markdown parser object, optionally requiring all of our needed classes and
 	 * instantiating our parser.
 	 * @return object WPCom_GHF_Markdown_Parser instance.
@@ -349,7 +357,7 @@ class WPCom_Markdown {
 	public function get_parser() {
 
 		if ( ! self::$parser ) {
-			jetpack_require_lib( 'markdown' );
+			//jetpack_require_lib( 'markdown' );
 			self::$parser = new WPCom_GHF_Markdown_Parser;
 		}
 

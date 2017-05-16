@@ -4,7 +4,7 @@
  * Plugin URI: http://7php.com/
  * Description: Helping you Write posts or pages in plain-text Markdown syntax. It will also switch-off the Visual Editor. This plugin cleverly sits on a giant's shoulder, namely Jetpack.
  * Author: 7PHP
- * Version: 1.0.1
+ * Version: 2.0.1
  * Text Domain: jetpack
  * Domain Path: /languages/
  * License: GPL2 or later

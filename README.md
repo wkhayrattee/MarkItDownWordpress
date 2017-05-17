@@ -14,10 +14,14 @@
 1. via WPackagist.org
 
 ```
-$ composer require "sevenphp/markitdownwordpress: ^1"
+$ composer require "wpackagist-theme/mark-it-down-wp: ^2"
 ```
 
 2. if you are using [johnpbloch/wordpress](https://github.com/johnpbloch/wordpress)
+
+```
+$ composer require "sevenphp/markitdownwordpress: ^1"
+```
 
 > And you'll thus need to add the following in your composer:
 

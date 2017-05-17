@@ -9,12 +9,42 @@
 
 ## Installation
 
-- Installation via composer
+#### Installation via composer
+
+1. via WPackagist.org
 
 ```
 $ composer require "sevenphp/markitdownwordpress: ^1"
 ```
 
-- Manual installation:
+2. if you are using [johnpbloch/wordpress](https://github.com/johnpbloch/wordpress)
 
-Download and extract the latest version to your plugin's folder.
+> And you'll thus need to add the following in your composer:
+
+```
+"repositories": [
+    {
+      "type": "composer",
+      "url": "https://github.com/7php/MarkItDownWordpress.git"
+    }
+  ]
+```
+
+- Suggested 'have-a-look' => [WordpressWithComposer](https://github.com/7php/wordpresswithcomposer)
+
+#### Manual installation:
+
+- Download and extract the latest version to your plugin's folder.
+
+
+#### Via Wordpress' official Plugin Directory
+
+- See: https://wordpress.org/plugins/mark-it-down-wp/
+
+
+
+### Feedback / Rating
+
+- If you like what I'm doing, please leave the plugin a review and rating here: https://wordpress.org/plugins/mark-it-down-wp/
+
+(I thank you for your time and help)

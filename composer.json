@@ -1,7 +1,7 @@
 {
   "name"       : "sevenphp/markitdownwordpress",
-  "description": "wp-rocket WordPress cache plugin",
-  "keywords"   : ["markdown", "markup", "wordpress", "wp"],
+  "description": "wordpress markdown plugin",
+  "keywords"   : ["markdown", "markup", "wordpress", "wp", "jetpack"],
   "type"       : "wordpress-plugin",
   "license"    : "GPL-2.0+",
   "authors"    : [

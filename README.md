@@ -14,7 +14,7 @@
 1. via WPackagist.org
 
 ```
-$ composer require "wpackagist-theme/mark-it-down-wp: ^2"
+$ composer require "wpackagist-plugin/mark-it-down-wp: ^2"
 ```
 
 2. if you are using [johnpbloch/wordpress](https://github.com/johnpbloch/wordpress)

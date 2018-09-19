@@ -33,7 +33,7 @@ if (! class_exists('Jetpack')) {
     /*
      * Disable the wordpress visual editor, in Markdown writing we don't need it
      */
-    add_filter('user_can_richedit', function() {return false;}, 50);
+    add_filter('user_can_richedit', '__return_false', 50);
 
 } else {
     trigger_error("It seems you are also running the Jetpack plugin. If YES, you don't need the plugin [MarkItDownWordpress] as Jetpack already has this module bundled.", E_USER_WARNING);
